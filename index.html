@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8406aef034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#porfolio">portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front_End Developer</p>
+        <h1>Hi, i'm <span>Tunmise</span><br> David From Nigeria</h1>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellendus, nihil quasi voluptate consequatur praesentium ab necessitatibus molestias excepturi consequuntur reiciendis aliquid magnam! Asperiores at quasi in? Iste, ipsa facilis?</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>web app development
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023 - current</span><br> web developer at shopping App
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br> Training at superSimpleDev
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list"> 
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore, porro nostrum voluptatibus nulla vel harum quae</p>
+          <a href="">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- portfolio -->
+  <div id="porfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer">
+            <h3>social Media App</h3>
+            <p>This app connects you to the talented people around the world.</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>This app connects you to the talented people around the world.</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="">
+          <div class="layer">
+            <h3>Online Shopping Website</h3>
+            <p>You can shop your prefered clothes</p>
+            <a href="https://tunmisedavid.github.io/shopping-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/image-interactive.jpg" alt="">
+          <div class="layer">
+            <h3>Get your desired VR's </h3>
+            <p>We deliver impressive Experiences</p>
+            <a href="https://tunmisedavid.github.io/Loopstudios/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/image-interactive.jpg" alt="">
+          <div class="layer">
+            <h3>clipboard-website </h3>
+            <p>We deliver impressive Experiences</p>
+            <a href="https://tunmisedavid.github.io/clipboard-website/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="">
+          <div class="layer">
+            <h3>Rock Paper Scissors Game</h3>
+            <p>Have a great experience with this mini rock-paper-scisors game</p>
+            <a href="https://tunmisedavid.github.io/Rock-paper-scissors-game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>tunmisearowo@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>+2347040248309</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Simple TM Codes. <i class="fas fa-heart"></i></p>
+    </div>
+  </div>
+  <script>
+    let tablinks = document.getElementsByClassName('tab-links');
+    let tabContents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabName) {
+      for(tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for(tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add('active-link');
+      document.getElementById(tabName).classList.add('active-tab')
+    }
+  </script>
+  <script>
+    let sidemenu = document.getElementById('sidemenu');
+
+    function openmenu() {
+      sidemenu.style.right = '0';
+    }
+
+    function closemenu() {
+      sidemenu.style.right = '-200px';
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjhIVwUiqu2Q25wsrKvJ-haLq23eEkNR_9WIUKYr7o-ydzgfrj3SQGRWz9DIKxhJI6MA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = 'Message sent succesfully'
+          setTimeout(function() {
+            msg.innerHTML = ''
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
